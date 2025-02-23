@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata CPS Slider</title>
+<script defer src="js/bundle.js"></script><link href="css/style.css" rel="stylesheet"></head>
+<body>
+    <header class="repair-header">
+        <h2 class="repair-header__description">
+            Ремонт техники различных брендов
+        </h2>
+    </header>
+    <main class="repair-main">
+        <div class="repair-main__wrapper">
+            <section class="mobile-swiper">
+                <!-- kill me pls, I hate this thing -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/lenovo.png" alt="Lenovo" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/samsung.png" alt="Samsung" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/apple.png" alt="Apple" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/viewsonic.png" alt="ViewSonic" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/bosch.png" alt="Bosch" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/hp.png" alt="HP" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/acer.png" alt="Acer" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide custom-swiper-slide">
+                            <a href="#" class="repair-brand">
+                                <img src="images/sony.png" alt="SONY" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination custom-swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="brands-block">
+                <div class="brands-block__wrapper brands-block__wrapper--min">
+                    <ul class="repair-brands">
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/lenovo.png" alt="Lenovo" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/samsung.png" alt="Samsung" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/apple.png" alt="Apple" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/viewsonic.png" alt="ViewSonic" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/bosch.png" alt="Bosch" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/hp.png" alt="HP" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/acer.png" alt="Acer" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/sony.png" alt="Sony" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/lenovo.png" alt="Lenovo" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/samsung.png" alt="Samsung" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                        <li class="repair-brands__item">
+                            <a href="#" class="repair-brand">
+                                <img src="images/apple.png" alt="Apple" class="repair-brand__img">
+                                <span class="repair-brand__arrow"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="expand-button">
+                    <img src="images/expand-arrow.svg" alt="Показать все" class="expand-button__img">
+                    <span class="expand-button__text">Показать все</span>
+                </button>
+            </section>
+        </div>
+    </main>
+    <script src="src/js/expand.js"></script>
+</body>
+</html>
