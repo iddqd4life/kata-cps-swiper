@@ -58,7 +58,6 @@ body {
   border: 1px solid rgb(234, 234, 234);
   border-radius: 6px;
   display: flex;
-  padding: 10px;
   height: 72px;
   align-items: center;
   max-width: 240px;
@@ -71,6 +70,8 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
+  padding: 10px;
+  height: 100%;
 }
 .repair-brand__image {
   display: block;
@@ -148,6 +149,15 @@ body {
     display: block;
     padding: 0 24px;
   }
+  .brands-block__wrapper {
+    margin-bottom: 16px;
+    overflow: hidden;
+    max-height: 344px;
+    transition: max-height 1s ease;
+  }
+  .brands-block__wrapper.brands-block__wrapper--min {
+    max-height: 164px;
+  }
   .repair-brands {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
@@ -161,19 +171,9 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     background-color: #fff;
-    padding: 10px;
     border: 1px solid rgb(234, 234, 234);
     border-radius: 6px;
     height: 74px;
-  }
-  .brands-block__wrapper {
-    margin-bottom: 16px;
-    overflow: hidden;
-    max-height: 344px;
-    transition: max-height 1s ease;
-  }
-  .brands-block__wrapper.brands-block__wrapper--min {
-    max-height: 164px;
   }
   .expand-button {
     background-color: transparent;

@@ -41,7 +41,6 @@ body {
   border: 1px solid rgba(234, 234, 234, 1);
   border-radius: 6px;
   display: flex;
-  padding: 10px;
   height: 72px;
   align-items: center;
   max-width: 240px;
@@ -54,6 +53,8 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
+  padding: 10px;
+  height: 100%;
 
   &__image {
     display: block;
@@ -134,6 +135,17 @@ body {
   .brands-block {
     display: block;
     padding: 0 24px;
+
+    &__wrapper {
+      margin-bottom: 16px;
+      overflow: hidden;
+      max-height: 344px;
+      transition: max-height 1s ease;
+    }
+  }
+
+  .brands-block__wrapper.brands-block__wrapper--min {
+    max-height: 164px;
   }
 
   .repair-brands {
@@ -142,29 +154,17 @@ body {
     row-gap: 16px;
     column-gap: 24px;
     list-style: none;
-  }
 
-  .repair-brands__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid rgba(234, 234, 234, 1);
-    border-radius: 6px;
-    height: 74px;
-  }
-
-  .brands-block__wrapper {
-    margin-bottom: 16px;
-    overflow: hidden;
-    max-height: 344px;
-    transition: max-height 1s ease;
-  }
-
-  .brands-block__wrapper.brands-block__wrapper--min {
-    max-height: 164px;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      background-color: #fff;
+      border: 1px solid rgba(234, 234, 234, 1);
+      border-radius: 6px;
+      height: 74px;
+    }
   }
 
   .expand-button {
@@ -182,10 +182,10 @@ body {
 
   .expand-button__img {
     transition: transform 0.3s ease;
-  }
 
-  .expand-button__img--rotate {
-    transform: rotate(180deg);
+    &--rotate {
+      transform: rotate(180deg);
+    }
   }
 }
 
